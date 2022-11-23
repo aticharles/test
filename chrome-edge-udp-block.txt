@@ -1,0 +1,3 @@
+@ECHO OFF
+netsh advfirewall firewall add rule name="ChromeUDP" dir=out action=block protocol=UDP remoteport=any localport=any Program="C:\Program Files\Google\Chrome\Application\chrome.exe"
+netsh advfirewall firewall add rule name="EdgeUDP" dir=out action=block protocol=UDP remoteport=any localport=any Program="C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"
